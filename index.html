@@ -66,14 +66,19 @@
         <input type="text" placeholder="Enter Text" id="text" name="uname" required>
       </div>
       <button id="submit">Submit</button>
-    <img id="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=example" />
+      <div style="width:image width px; font-size:80%; text-align:center;">
+          <img id="qr" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=example" alt="alternate text" />
+          <p id="txt">example</p>
+      </div>
+
     <script>
         var submit = document.getElementById("submit");
         submit.onclick = function() {
             var text = document.getElementById("text").value;
             console.log(text);
-            document.getElementById("abc").innerText = text
             document.getElementById("qr").src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data="+text;
+            console.log(text);
+            document.getElementById("txt").innerText = text;
         }
     </script>
   </body>
