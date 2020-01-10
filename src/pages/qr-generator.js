@@ -64,7 +64,7 @@ export default function QRGenerator() {
           <CropFreeIcon />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Sign in
+          QR Generator
         </Typography>
         <form className={classes.form} noValidate>
           <TextField
