@@ -1,14 +1,17 @@
 import React from "react";
-import QRCode from "qrcode.react";
-import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import HomePage from "./pages/homepage";
+import QRGenerator from "./pages/qr-generator";
+import QRScanner from "./pages/qr-scanner";
 
 function App() {
   return (
-    <div className="App">
-      <QRCode value="a" />
-      <QRCode value="a" />
-      <QRCode value="a" />
-      <QRCode value="a" />
+    <div>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/generate" component={QRGenerator} />
+        <Route path="/scanner" component={QRScanner} />
+      </Switch>
     </div>
   );
 }
