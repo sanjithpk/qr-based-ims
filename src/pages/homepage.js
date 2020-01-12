@@ -17,7 +17,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        QR IMS
+        Scanventory
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -67,7 +67,7 @@ export default function HomePage() {
         <Toolbar>
           <CropFreeIcon className={classes.icon} />
           <Typography variant="h6" color="inherit" noWrap>
-            QR IMS
+            Scanventory
           </Typography>
         </Toolbar>
       </AppBar>
@@ -89,7 +89,7 @@ export default function HomePage() {
               color="textPrimary"
               gutterBottom
             >
-              QR IMS
+              Scanventory
             </Typography>
             <Typography
               variant="h5"
@@ -119,7 +119,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          QR IMS
+          Scanventory
         </Typography>
         <Copyright />
       </footer>
